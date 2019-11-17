@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta http-equiv="Content-Type" content="width=device-width, inicial-scale=1.0" charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Nada ainda</title>
+
+	<link href="css/sgnup.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+	<script src ="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+</head>
+
+<body>
+
+<div class="pagina">
+            <header tabindex="0"><label>VIRTUAL LANCHES</label></header>
+            <img src="img/carrinho.png">
+            <div id="nav-container">
+            <div class="bg"></div>
+            <div class="button" tabindex="0">
+                <span class="linha-menu"></span>
+                <span class="linha-menu"></span>
+                <span class="linha-menu"></span>
+            </div>
+
+        <div id="nav-content" tabindex="0">
+            <ul id="categorias" class="categorias">
+                <li>
+                    <div class="circle_photo" id="circle_photo">
+                    <img src="img/profile.png">
+                    </div>
+                    <div class="texto" id="texto"><p>Olá, Fulano Fulano</p>
+                    </div>
+                </li>
+
+        <li><a href="#0">Início</a></li>
+        <li><a href="#0">Minha Conta</a></li>
+        <li><a href="#0">Pedidos Atendidos</a></li>
+        <li><a href="#0">Produtos Disponíveis</a></li>
+        <li><a href="#0">Lista de Produtos</a></li>
+        <li><a href="#0">Cadastro de Produtos</a></li>
+        <li><a href="#0">Alteração de Produtos</a></li>
+        <li><a href="loginCliente.html">Sair</a></li>
+      </ul>
+    </div>
+</div>
+
+	<div id=top_msg>
+		<div id="msg">Parabéns. Seu cadastro foi realizado com sucesso.</div>
+			</div>
+	<div id="signup" class="signup">
+		<form>
+			<h2>Cadastro</h2>
+			<input type="text" name="Nome de usuário" placeholder="Primeiro nome"><br><br>
+			<input type="text" name="Nome de usuário" placeholder="Sobrenome"><br><br>
+			<input type="password" name="senha" placeholder="Senha"><br><br>
+			<input type="password" name="senha" placeholder="Corfirmar a senha"><br><br>
+			<input type="email" name="endereçodeemail" placeholder="E-mail"><br><br>
+			<input type="submit" value="Cadastrar" name="" onclick="myFunction()"><br><br>
+
+			<script>
+function myFunction() {
+    var x = document.getElementById("msg");
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+</script>
+        Você já tem uma conta?
+        <a href="loginCliente.html">&nbsp;Login</a>
+
+		</form>
+	</div>
+</body>
+
+<div id="rodape">Time5 &copy; 2019</div>
+
+
+</html>

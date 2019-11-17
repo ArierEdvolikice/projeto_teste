@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="ajax" type="ajax" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+
+	<link rel="stylesheet" type="text/css" href="css/menu_inicial.css">
+
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+
+	<title></title>
+
+</head>
+
+<div id="covers_everything" class="covers_everything"></div>
+
+
+<body onLoad="timer()">
+
+	<div id="tempo_01" class="tempo_01">
+		<p id="time"></p>
+		<p id="data"></p>
+	</div>
+
+	<div id="botão_switch">
+		<p id="TEXTO_ABERTO" style="display: none;" >ABERTO</p>
+		<p id="TEXTO_FECHADO">FECHADO</p>
+		<label id="switch" class="switch">
+			<input id="myCheckbox" onclick="toggle_visibility('TEXTO_ABERTO', 'TEXTO_FECHADO');" type="checkbox">
+			<span class="slider round"></span>
+		</label>
+	</div>
+
+	
+	<div class="pagina">
+            <header tabindex="0"><label>VIRTUAL LANCHES</label></header>
+            <a href="carrinho.html"><label><img src="img/carrinho.png"></label></a>
+            <div id="nav-container">
+            <div class="bg"></div>
+            <div class="button" tabindex="0">
+                <span class="linha-menu"></span>
+                <span class="linha-menu"></span>
+                <span class="linha-menu"></span>
+            </div>
+
+        <div id="nav-content" tabindex="0">
+            <ul id="categorias" class="categorias">
+                <li>
+                    <div class="circle_photo" id="circle_photo">
+                    <img src="img/profile.png">
+                    </div>
+                    <div class="texto" id="texto"><p>Olá, Fulano Fulano</p>
+                    </div>
+                </li>
+
+        <li><a href="menu_inicial.html">Início</a></li>
+        <li><a href="alterarCliente.html">Minha Conta</a></li>
+        <li><a href="#0">Pedidos Atendidos</a></li>
+        <li><a href="#0">Produtos Disponíveis</a></li>
+        <li><a href="#0">Lista de Produtos</a></li>
+        <li><a href="#0">Cadastro de Produtos</a></li>
+        <li><a href="#0">Alteração de Produtos</a></li>
+        <li><a href="#0">Sair</a></li>
+      </ul>
+    </div>
+</div>
+
+
+	
+
+	<div class="grid-container-01">
+		<a href="produtos_venda.html"><div class="grid-item"><img src="img/COMBO.png"></div></a>
+		<a href="produtos_venda.html"><div class="grid-item"><img src="img/COMBO.png"></div></a>
+		<a href="produtos_venda.html"><div class="grid-item"><img src="img/COMBO.png"></div></a>
+		<a href="produtos_venda.html"><div class="grid-item"><img src="img/COMBO.png"></div></a>
+		<a href="produtos_venda.html"><div class="grid-item"><img src="img/COMBO.png"></div></a>
+		<a href="produtos_venda.html"><div class="grid-item"><img src="img/COMBO.png"></div></a>
+	</div>
+
+	
+
+<script src="js/produtos.js"></script>
+
+<script>
+	
+	function timer() {
+		var d = new Date();
+		document.getElementById('time').innerHTML = d.toLocaleTimeString();
+		setTimeout('timer()', 1000);
+	}
+
+</script>
+
+<script>
+	n =  new Date();
+	y = n.getYear() - 119 + 19;
+	m = n.getMonth() + 1;
+	d = n.getDate();
+	document.getElementById("data").innerHTML =" - " + d + "/" + m + "/" + y;
+</script>
+
+<script>
+	setTimeout(function() {
+		$("#covers_everything").fadeOut().empty();
+	}, 500);
+
+</script>
+
+
+
+</body>
+</html>
